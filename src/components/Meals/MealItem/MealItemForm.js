@@ -2,6 +2,11 @@ import Input from "../../UI/Input";
 import classes from "./MealItemForm.module.css";
 
 const MeatItemForm = (props) => {
+
+  const submitHandler = event =>{
+    event.preventDefault();
+  };
+
   return (
     <form className={classes.form}>
       <Input
